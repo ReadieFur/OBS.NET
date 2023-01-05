@@ -1,8 +1,8 @@
 #include "Bootstrapper.h"
 #include <obs-module.h>
 
-#define DOTNET_DLL L"obs-dotnet.dll"
-#define PLUGIN_NAME "obs-dotnet"
+#define DOTNET_DLL L"obs-dotnet.standalone.dll"
+#define PLUGIN_NAME "obs-dotnet.standalone"
 #define PLUGIN_DESCRIPTION "A wrapper plugin for OBS that hosts a .NET runtime."
 #define PLUGIN_AUTHOR "ReadieFur"
 

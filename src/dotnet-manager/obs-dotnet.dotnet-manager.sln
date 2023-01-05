@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obs-dotnet.bootstrapper-shared", "..\core\obs-dotnet.bootstrapper-shared\obs-dotnet.bootstrapper-shared.vcxitems", "{F1CD49CB-5A61-43DD-9117-DA7B820BD8C7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "obs-dotnet.shared", "..\core\obs-dotnet.shared\obs-dotnet.shared.shproj", "{5FF38265-0F19-4CC4-B494-9AC9A221B16B}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C159D14-3BA1-45B2-BBF9-5462A72D9259}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\core\obs-dotnet.shared\obs-dotnet.shared.projitems*{5ff38265-0f19-4cc4-b494-9ac9a221b16b}*SharedItemsImports = 13
+		..\core\obs-dotnet.bootstrapper-shared\obs-dotnet.bootstrapper-shared.vcxitems*{f1cd49cb-5a61-43dd-9117-da7b820bd8c7}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal

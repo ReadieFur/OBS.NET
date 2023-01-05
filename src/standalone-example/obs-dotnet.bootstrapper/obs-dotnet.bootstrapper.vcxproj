@@ -24,7 +24,7 @@
     <ProjectGuid>{d7b2eea6-5c78-4cd7-88bc-7aa57ec02376}</ProjectGuid>
     <RootNamespace>obsdotnet</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>obs-dotnet.bootstrapper</ProjectName>
+    <ProjectName>obs-dotnet.standalone.bootstrapper</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -57,7 +57,7 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="Shared">
-    <Import Project="..\obs-dotnet.bootstrapper-shared\obs-dotnet.bootstrapper-shared.vcxitems" Label="Shared" />
+    <Import Project="..\..\core\obs-dotnet.bootstrapper-shared\obs-dotnet.bootstrapper-shared.vcxitems" Label="Shared" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />

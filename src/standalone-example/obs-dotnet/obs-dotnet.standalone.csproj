@@ -11,8 +11,8 @@
     <ProjectGuid>{44B51ADF-6B82-4F12-A990-B50CB7BF163F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>obs_dotnet</RootNamespace>
-    <AssemblyName>obs-dotnet</AssemblyName>
+    <RootNamespace>obs_dotnet.standalone</RootNamespace>
+    <AssemblyName>obs-dotnet.standalone</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -49,6 +49,6 @@
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <Import Project="..\obs-dotnet.shared\obs-dotnet.shared.projitems" Label="Shared" />
+  <Import Project="..\..\core\obs-dotnet.shared\obs-dotnet.shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
