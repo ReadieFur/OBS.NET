@@ -11,7 +11,7 @@ namespace obs_dotnet.standalone
         public static extern int obs_get_version();
 
         [Load]
-        public static bool Load()
+        private static bool Load()
         {
             string testMessage = $"Hello, World. From C#!\nOBS Version: {obs_get_version()}";
             Console.WriteLine(testMessage);
@@ -21,7 +21,7 @@ namespace obs_dotnet.standalone
         }
 
         [Unload]
-        public static void Unload()
+        private static void Unload()
         {
             string testMessage = $"Goodbye, World. From C#!";
             Console.WriteLine(testMessage);
