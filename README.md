@@ -1,4 +1,4 @@
-# OBS .NET  
+# OBS.NET  
 This is a .NET runtime host for OBS Studio. It allows you to create OBS plugins using .NET!  
 **NOTE:** To any non-programmers/standard users looking for plugins, this repository is for developers only, the releases do nothing by themselves!  
 *NOTE:* This repository is a work in progress. While it should be usable, it is not yet feature complete.  
