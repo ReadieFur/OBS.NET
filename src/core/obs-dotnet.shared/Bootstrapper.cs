@@ -8,14 +8,15 @@ using System.Threading.Tasks;
 #nullable enable
 namespace obs_dotnet.shared
 {
-    public class Bootstrapper
+    public static class Bootstrapper
     {
 #pragma warning disable CS8618
         private static EventWaitHandle pluginStateEvent;
         private static Task unloadWaitTask; //This is only used to keep the task in scope.
 #pragma warning restore CS8618
 
-        public static int Run(string pluginStateEventName)
+        //This method is invoked by the native plugin boot-strapper.
+        private static int Run(string pluginStateEventName)
         {
             //The first firing of this event will be when the plugin is loaded, the second will be when the plugin is unloaded.
             pluginStateEvent = EventWaitHandle.OpenExisting(pluginStateEventName);
