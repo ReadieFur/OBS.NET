@@ -3,6 +3,8 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using obs_dotnet.shared;
 
+[assembly: PluginInfo(IsStandalone = true)]
+
 namespace obs_dotnet.standalone
 {
     public class Plugin
