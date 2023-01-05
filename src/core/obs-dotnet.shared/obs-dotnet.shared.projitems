@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Bootstrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PluginInfoAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LoadAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UnloadAttribute.cs" />
   </ItemGroup>

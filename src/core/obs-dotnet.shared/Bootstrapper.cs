@@ -27,8 +27,7 @@ namespace obs_dotnet.shared
 
             //Get the static methods in this assembly.
             IEnumerable<MethodInfo> staticMethods = Assembly.GetExecutingAssembly().GetTypes()
-                .SelectMany(t => t.GetMethods())
-                .Where(m => m.IsStatic);
+                .SelectMany(t => t.GetMethods(BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic));
 
             //Find the Load method.
             MethodInfo? loadMethod = staticMethods.FirstOrDefault(m => m.GetCustomAttribute<LoadAttribute>() != null);

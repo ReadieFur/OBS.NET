@@ -7,7 +7,45 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obs-dotnet.bootstrapper-sha
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "obs-dotnet.shared", "..\core\obs-dotnet.shared\obs-dotnet.shared.shproj", "{5FF38265-0F19-4CC4-B494-9AC9A221B16B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obs-dotnet.bootstrapper", "obs-dotnet.bootstrapper\obs-dotnet.bootstrapper.vcxproj", "{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "obs-dotnet", "obs-dotnet\obs-dotnet.csproj", "{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Debug|Any CPU.Build.0 = Debug|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Debug|x64.ActiveCfg = Debug|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Debug|x64.Build.0 = Debug|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Debug|x86.Build.0 = Debug|Win32
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Release|Any CPU.ActiveCfg = Release|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Release|Any CPU.Build.0 = Release|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Release|x64.ActiveCfg = Release|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Release|x64.Build.0 = Release|x64
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Release|x86.ActiveCfg = Release|Win32
+		{C4C59F4D-B75A-416F-9048-5EBA4DA43DE6}.Release|x86.Build.0 = Release|Win32
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Debug|x64.Build.0 = Debug|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Debug|x86.Build.0 = Debug|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Release|x64.ActiveCfg = Release|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Release|x64.Build.0 = Release|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Release|x86.ActiveCfg = Release|Any CPU
+		{4DA0E8DE-463F-4D3D-9129-8B9A8FE32E22}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -15,7 +53,9 @@ Global
 		SolutionGuid = {6C159D14-3BA1-45B2-BBF9-5462A72D9259}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\core\obs-dotnet.shared\obs-dotnet.shared.projitems*{4da0e8de-463f-4d3d-9129-8b9a8fe32e22}*SharedItemsImports = 4
 		..\core\obs-dotnet.shared\obs-dotnet.shared.projitems*{5ff38265-0f19-4cc4-b494-9ac9a221b16b}*SharedItemsImports = 13
+		..\core\obs-dotnet.bootstrapper-shared\obs-dotnet.bootstrapper-shared.vcxitems*{c4c59f4d-b75a-416f-9048-5eba4da43de6}*SharedItemsImports = 4
 		..\core\obs-dotnet.bootstrapper-shared\obs-dotnet.bootstrapper-shared.vcxitems*{f1cd49cb-5a61-43dd-9117-da7b820bd8c7}*SharedItemsImports = 9
 	EndGlobalSection
 EndGlobal
