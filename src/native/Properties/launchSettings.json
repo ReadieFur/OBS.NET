@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "OBS": {
+      "commandName": "Executable",
+      "executablePath": "H:\\Programs\\OBS\\Test\\bin\\64bit\\obs64.exe",
+      "commandLineArgs": "-m -p",
+      "workingDirectory": "H:\\Programs\\OBS\\Test\\bin\\64bit",
+      "nativeDebugging": true
+    }
+  }
+}

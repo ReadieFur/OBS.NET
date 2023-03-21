@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>OSBDotNetNativePlugin</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <AssemblyName>obs-dotnet-native-plugin</AssemblyName>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="IF NOT DEFINED VS_PUBLISH (&#xD;&#xA;    SET VS_PUBLISH=true&#xD;&#xA;    dotnet publish /p:PublishProfile=&quot;$(ProjectDir)Properties\PublishProfiles\Publish$(Configuration).pubxml&quot;&#xD;&#xA;    SET ERRORLEVEL=0&#xD;&#xA;    @REM exit 1&#xD;&#xA;)" />
+  </Target>
+
+</Project>
